@@ -20,12 +20,16 @@ function currentLine(katzDeliLine){
     numberWithName.push(j+1 + ". "+ katzDeliLine[j])
   }
   return "The line is currently: "+ numberWithName.join(", ");
-=======
 function nowServing(katzDeliLine){
   if(katzDeliLine.length === true){
     return " Currently serving " + katzDeliLine.shift() + "." 
   }else{
     return "There is nobody waiting to be served!";
   }
->>>>>>> 84e234ea605a42e831adc793889504e1f68fbd16
+
+}
+var katzDeliNew = [];
+function takeANumberNew(number){
+  katzDeliNew.push(number);
+  return "Welcome "+ katzDeliNew.length -1
 }
